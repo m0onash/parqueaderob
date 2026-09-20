@@ -1,9 +1,8 @@
 package org.unilibre.Datos;
 
-import java.io.Serial;
-
 public class Bicicleta {
-    private int idPropietario;
+    private int idDueño;
+    private TipoIdentificacion tipoId;
     private String serial;
     private String color;
 
@@ -11,10 +10,10 @@ public class Bicicleta {
     }
 
     public int obtenerIdpropietario(){
-        return idPropietario;
+        return idDueño;
     }
 
-    public void modificarSerial(int serial){
+    public void modificarSerial(String serial){
     }
 
     public String obtenerSerial(){
@@ -26,6 +25,13 @@ public class Bicicleta {
 
     public String obtenerColor(){
         return color;
+    }
+
+    public void modificarTipoid(TipoIdentificacion tipoId){
+    }
+
+    public TipoIdentificacion obtenerTipoid(){
+        return tipoId;
     }
 
 
